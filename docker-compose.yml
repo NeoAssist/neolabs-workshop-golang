@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: neolabs
+      POSTGRES_USER: ${PG_NA_USER:-neolabs}
+      POSTGRES_PASSWORD: ${PG_NA_PASS:-neolabs}
+      TZ: "UTC"
+      PGTZ: "UTC"
+
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@neolabs.dev
+      PGADMIN_DEFAULT_PASSWORD: neolabs
+      PGADMIN_CONFIG_CONSOLE_LOG_LEVEL: 10

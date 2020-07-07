@@ -1,27 +1,6 @@
-#@IgnoreInspection BashAddShebang
-export ROOT=$(realpath $(dir $(lastword $(MAKEFILE_LIST))))
-export DEBUG=true
-export APP=neolabs-workshop-golang
-export LDFLAGS="-w -s"
-
-all: build test
-
+# note: call scripts from /scripts
 build:
-	go build -race  .
-
-build-static:
-	CGO_ENABLED=0 go build -race -v -o $(APP) -a -installsuffix cgo -ldflags $(LDFLAGS) .
+	go build cmd/neolabs-workshop-golang/neolabs-workshop-api.go
 
 run:
-	go run -race .
-
-test:
-	go test -v -race ./...
-
-container:
-	docker build -t echo-realworld .
-
-run-container:
-	docker run --rm -it echo-realworld
-
-.PHONY: build run build-static test container
+	go run cmd/neolabs-workshop-golang/neolabs-workshop-api.go

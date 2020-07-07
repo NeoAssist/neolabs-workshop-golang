@@ -1,24 +1,25 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/bower_components
-
-# IDEs and editors
-/.idea
-.project
-.classpath
-*.launch
-.settings/
-
-
-#System Files
+# Mac OS X files
 .DS_Store
-Thumbs.db
 
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
+.glide/
+
+# Dependency directories (remove the comment below to include it)
 vendor/
-*.db
-.vscode/
 
-# ignore default binary name generated with Makefile
-golang-echo-realworld-example-app
+.cache
+
+.env
