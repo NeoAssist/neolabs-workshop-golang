@@ -10,12 +10,13 @@ import (
 
 // Account model
 type Poster struct {
-	ID          uuid.UUID `gorm:"type:uuid;primary_key;default:uuid_generate_v4()"`
+	ID          uuid.UUID `gorm:"type:uuid;primary_key"`
 	Name        string    `gorm:"size:100"`
 	Title       string    `gorm:"size:30"`
 	Description string    `gorm:"size:255"`
 	Telephony   string    `gorm:"size:20"`
 	Email       string    `gorm:"size:30"`
+	ImageName   string    `gorm:"size:100"`
 	CreatedAt   time.Time
 	UpdatedAt   time.Time
 	DeletedAt   *time.Time

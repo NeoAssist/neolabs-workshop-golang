@@ -16,16 +16,18 @@ type singlePosterResponse struct {
 	Poster struct {
 		Name        string    `json:"name"`
 		Description string    `json:"description"`
-		Email       string    `json:"description"`
+		Email       string    `json:"email"`
 		Telephony   string    `json:"telephony"`
 		Title       string    `json:"title"`
+		ImageName   string    `json:"image_name"`
 		CreatedAt   time.Time `json:"createdAt"`
 		UpdatedAt   time.Time `json:"updatedAt"`
-	}
+	} `json:"poster"`
 }
 
 type allPostersResponse struct {
-	Posters []*posterResponse `json:"articles"`
+	Posters      []*singlePosterResponse `json:"articles"`
+	PostersCount int                     `json:"postersCount"`
 }
 
 func newPosterCreateResponse(message string) *posterResponse {
@@ -54,8 +56,31 @@ func newPosterResponse(poster *model.Poster) *singlePosterResponse {
 	response.Poster.Email = poster.Email
 	response.Poster.Telephony = poster.Telephony
 	response.Poster.Title = poster.Title
+	response.Poster.ImageName = poster.ImageName
 	response.Poster.CreatedAt = poster.CreatedAt
 	response.Poster.UpdatedAt = poster.UpdatedAt
+
+	return response
+}
+
+func newPosterListResponse(posters []model.Poster, count int) *allPostersResponse {
+	response := new(allPostersResponse)
+	response.Posters = make([]*singlePosterResponse, 0)
+
+	for _, value := range posters {
+		pr := new(singlePosterResponse)
+
+		pr.Poster.Name = value.Name
+		pr.Poster.Description = value.Description
+		pr.Poster.Email = value.Email
+		pr.Poster.Telephony = value.Telephony
+		pr.Poster.Title = value.Title
+		pr.Poster.CreatedAt = value.CreatedAt
+		pr.Poster.UpdatedAt = value.UpdatedAt
+		pr.Poster.ImageName = value.ImageName
+	}
+
+	response.PostersCount = count
 
 	return response
 }

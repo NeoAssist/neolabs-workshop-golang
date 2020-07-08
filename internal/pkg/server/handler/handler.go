@@ -6,12 +6,12 @@ import (
 
 // Handler .
 type Handler struct {
-	posterStore interfaces.Store
+	posterStore interfaces.PosterStore
 }
 
 // NewHandler Handle the requests
-func NewHandler(as interfaces.Store) *Handler {
+func NewHandler(ps interfaces.PosterStore) *Handler {
 	return &Handler{
-		posterStore: as,
+		posterStore: ps,
 	}
 }

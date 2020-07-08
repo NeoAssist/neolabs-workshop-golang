@@ -3,6 +3,7 @@ package store
 import (
 	"github.com/NeoAssist/neolabs-workshop-golang/internal/pkg/database/model"
 	"github.com/jinzhu/gorm"
+	uuid "github.com/satori/go.uuid"
 )
 
 // PosterStore .
@@ -17,22 +18,36 @@ func NewPosterStore(db *gorm.DB) *PosterStore {
 	}
 }
 
+func (ps *PosterStore) GetAll(offset int, limit int) ([]model.Poster, int, error) {
+	var (
+		posters []model.Poster
+		count   int
+	)
+
+	ps.db.Model(&posters).Count(&count)
+	ps.db.Offset(offset).Limit(limit).Order("created_at desc").Find(&posters)
+
+	return posters, count, nil
+}
+
 // GetByID .
-func (as *PosterStore) GetByID(id string) (*model.Poster, error) {
+func (ps *PosterStore) GetByID(id uuid.UUID) (*model.Poster, error) {
 	var m model.Poster
-	if err := as.db.Where(&model.Poster{ID: id}).Error; err != nil {
+
+	if err := ps.db.Where(&model.Poster{ID: id}).Find(&m).Error; err != nil {
 		if gorm.IsRecordNotFoundError(err) {
 			return nil, nil
 		}
 		return nil, err
 	}
+
 	return &m, nil
 }
 
 // GetByEmail .
-func (as *PosterStore) GetByEmail(e string) (*model.Poster, error) {
+func (ps *PosterStore) GetByEmail(email string) (*model.Poster, error) {
 	var m model.Poster
-	if err := as.db.Where(&model.Poster{Email: e}).First(&m).Error; err != nil {
+	if err := ps.db.Where("email LIKE ?", "%"+email+"%").Find(&m).Error; err != nil {
 		if gorm.IsRecordNotFoundError(err) {
 			return nil, nil
 		}
@@ -43,22 +58,9 @@ func (as *PosterStore) GetByEmail(e string) (*model.Poster, error) {
 }
 
 // GetByName .
-func (as *PosterStore) GetByName(name string) (*model.Poster, error) {
+func (ps *PosterStore) GetByName(name string) (*model.Poster, error) {
 	var m model.Poster
-	if err := as.db.Where(&model.Poster{Name: name}).Error; err != nil {
-		if gorm.IsRecordNotFoundError(err) {
-			return nil, nil
-		}
-		return nil, err
-	}
-
-	return &m, nil
-}
-
-// GetByDescription .
-func (as *PosterStore) GetByDescription(description string) (*model.Poster, error) {
-	var m model.Poster
-	if err := as.db.Where(&model.Poster{Description: description}).Error; err != nil {
+	if err := ps.db.Where("name LIKE ?", "%"+name+"%").Find(&m).Error; err != nil {
 		if gorm.IsRecordNotFoundError(err) {
 			return nil, nil
 		}
@@ -69,9 +71,22 @@ func (as *PosterStore) GetByDescription(description string) (*model.Poster, erro
 }
 
 // GetByTitle .
-func (as *PosterStore) GetByTitle(title string) (*model.Poster, error) {
+func (ps *PosterStore) GetByTitle(title string) (*model.Poster, error) {
 	var m model.Poster
-	if err := as.db.Where(&model.Poster{Title: title}).Error; err != nil {
+	if err := ps.db.Where("title LIKE ?", "%"+title+"%").Find(&m).Error; err != nil {
+		if gorm.IsRecordNotFoundError(err) {
+			return nil, nil
+		}
+		return nil, err
+	}
+
+	return &m, nil
+}
+
+// GetByDescription .
+func (ps *PosterStore) GetByDescription(description string) (*model.Poster, error) {
+	var m model.Poster
+	if err := ps.db.Where("description LIKE ?", "%"+description+"%").Find(&m).Error; err != nil {
 		if gorm.IsRecordNotFoundError(err) {
 			return nil, nil
 		}
@@ -82,8 +97,8 @@ func (as *PosterStore) GetByTitle(title string) (*model.Poster, error) {
 }
 
 // Create .
-func (as *PosterStore) Create(u *model.Poster) (err error) {
-	transaction := as.db.Begin()
+func (ps *PosterStore) Create(u *model.Poster) (err error) {
+	transaction := ps.db.Begin()
 
 	if err := transaction.Model(u).Create(u).Error; err != nil {
 		return err
@@ -93,8 +108,8 @@ func (as *PosterStore) Create(u *model.Poster) (err error) {
 }
 
 // Update .
-func (as *PosterStore) Update(u *model.Poster) error {
-	transaction := as.db.Begin()
+func (ps *PosterStore) Update(u *model.Poster) error {
+	transaction := ps.db.Begin()
 
 	if err := transaction.Model(u).Update(u).Error; err != nil {
 		return err

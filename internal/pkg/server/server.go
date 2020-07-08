@@ -18,6 +18,7 @@ func RunServer() {
 	database.AutoMigrate(d)
 
 	posterStore := store.NewPosterStore(d)
+
 	h := handler.NewHandler(posterStore)
 	h.Register(v1)
 

@@ -12,6 +12,7 @@ type posterCreateRequest struct {
 		Description string `json:"description"`
 		Telephony   string `json:"telephony"`
 		Email       string `json:"email"`
+		ImageName   string `json:"image_name"`
 	} `json:"poster"`
 }
 
@@ -22,6 +23,7 @@ type posterUpdateRequest struct {
 		Description string `json:"description"`
 		Telephony   string `json:"telephony"`
 		Email       string `json:"email"`
+		ImageName   string `json:"image_name"`
 	} `json:"poster"`
 }
 
@@ -40,6 +42,7 @@ func (request *posterCreateRequest) bind(context echo.Context, poster *model.Pos
 	poster.Description = request.Poster.Description
 	poster.Telephony = request.Poster.Telephony
 	poster.Email = request.Poster.Email
+	poster.ImageName = request.Poster.ImageName
 
 	return nil
 }
@@ -58,6 +61,7 @@ func (request *posterUpdateRequest) bind(context echo.Context, poster *model.Pos
 	poster.Description = request.Poster.Description
 	poster.Telephony = request.Poster.Telephony
 	poster.Email = request.Poster.Email
+	poster.ImageName = request.Poster.ImageName
 
 	return nil
 }
