@@ -1,15 +1,27 @@
 version: "3.7"
 
+networks:
+  neoacademy:
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.10.10.0/24
+
 services:
   postgres:
     image: postgres
     restart: always
+    ports:
+      - "5432:5432"
     environment:
       POSTGRES_DB: neolabs
       POSTGRES_USER: ${PG_NA_USER:-neolabs}
       POSTGRES_PASSWORD: ${PG_NA_PASS:-neolabs}
       TZ: "UTC"
       PGTZ: "UTC"
+    networks:
+      neoacademy:
+        ipv4_address: 10.10.10.22
 
   pgadmin:
     image: dpage/pgadmin4
@@ -18,3 +30,6 @@ services:
       PGADMIN_DEFAULT_EMAIL: admin@neolabs.dev
       PGADMIN_DEFAULT_PASSWORD: neolabs
       PGADMIN_CONFIG_CONSOLE_LOG_LEVEL: 10
+    networks:
+      neoacademy:
+        ipv4_address: 10.10.10.23
