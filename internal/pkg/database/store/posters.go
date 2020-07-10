@@ -44,49 +44,10 @@ func (ps *PosterStore) GetByID(id uuid.UUID) (*model.Poster, error) {
 	return &m, nil
 }
 
-// GetByEmail .
-func (ps *PosterStore) GetByEmail(email string) (*model.Poster, error) {
-	var m model.Poster
-	if err := ps.db.Where("email LIKE ?", "%"+email+"%").Find(&m).Error; err != nil {
-		if gorm.IsRecordNotFoundError(err) {
-			return nil, nil
-		}
-		return nil, err
-	}
-
-	return &m, nil
-}
-
-// GetByName .
-func (ps *PosterStore) GetByName(name string) (*model.Poster, error) {
-	var m model.Poster
-	if err := ps.db.Where("name LIKE ?", "%"+name+"%").Find(&m).Error; err != nil {
-		if gorm.IsRecordNotFoundError(err) {
-			return nil, nil
-		}
-		return nil, err
-	}
-
-	return &m, nil
-}
-
 // GetByTitle .
 func (ps *PosterStore) GetByTitle(title string) (*model.Poster, error) {
 	var m model.Poster
 	if err := ps.db.Where("title LIKE ?", "%"+title+"%").Find(&m).Error; err != nil {
-		if gorm.IsRecordNotFoundError(err) {
-			return nil, nil
-		}
-		return nil, err
-	}
-
-	return &m, nil
-}
-
-// GetByDescription .
-func (ps *PosterStore) GetByDescription(description string) (*model.Poster, error) {
-	var m model.Poster
-	if err := ps.db.Where("description LIKE ?", "%"+description+"%").Find(&m).Error; err != nil {
 		if gorm.IsRecordNotFoundError(err) {
 			return nil, nil
 		}

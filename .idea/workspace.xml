@@ -20,19 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d1a399f-c3f6-4d9f-9031-a45399356b2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/.keep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/pkg/database/interface/posters.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/database/interface/posters.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/pkg/database/model/posters.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/database/model/posters.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/pkg/database/store/posters.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/database/store/posters.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/pkg/server/handler/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/server/handler/handler.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/pkg/server/handler/posters.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/server/handler/posters.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/pkg/server/handler/request.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/server/handler/request.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/pkg/server/handler/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/server/handler/response.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/pkg/server/handler/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/server/handler/routes.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/pkg/server/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/server/router/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/pkg/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/server/server.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,23 +60,23 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cmd/neolabs-workshop-golang" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/cmd/neolabs-workshop-golang" />
-      <recent name="$PROJECT_DIR$/internal/pkg/server/handler" />
-      <recent name="$PROJECT_DIR$/internal/pkg/database/store" />
-      <recent name="$PROJECT_DIR$/internal/pkg/database/interface" />
-      <recent name="$PROJECT_DIR$/internal/pkg/database/model" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/internal/pkg" />
       <recent name="$PROJECT_DIR$/internal/pkg/server" />
       <recent name="$PROJECT_DIR$/neolabs-workshop-golang/router/handler" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/cmd/neolabs-workshop-golang" />
+      <recent name="$PROJECT_DIR$/internal/pkg/server/handler" />
+      <recent name="$PROJECT_DIR$/internal/pkg/database/store" />
+      <recent name="$PROJECT_DIR$/internal/pkg/database/interface" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.go build github.com/NeoAssist/neolabs-workshop-golang/cmd/neolabs-workshop-golang">
@@ -143,46 +136,46 @@
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state x="650" y="349" width="610" height="407" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1920.1055@0.25.1920.1055" timestamp="1594166150633" />
-    <state width="635" height="646" key="DebuggerActiveHint" timestamp="1594169042019">
+    <state width="938" height="646" key="DebuggerActiveHint" timestamp="1594339754519">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="635" height="646" key="DebuggerActiveHint/0.25.1920.1055@0.25.1920.1055" timestamp="1594169042019" />
+    <state width="938" height="646" key="DebuggerActiveHint/0.25.1920.1055@0.25.1920.1055" timestamp="1594339754519" />
     <state x="743" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1593467996215">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state x="743" y="310" width="424" height="484" key="FileChooserDialogImpl/0.25.1920.1055@0.25.1920.1055" timestamp="1593467996215" />
-    <state width="1874" height="258" key="GridCell.Tab.0.bottom" timestamp="1594169768661">
+    <state width="1874" height="258" key="GridCell.Tab.0.bottom" timestamp="1594339690642">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1874" height="258" key="GridCell.Tab.0.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1594169768661" />
-    <state width="1874" height="258" key="GridCell.Tab.0.center" timestamp="1594169768660">
+    <state width="1874" height="258" key="GridCell.Tab.0.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1594339690642" />
+    <state width="1874" height="258" key="GridCell.Tab.0.center" timestamp="1594339690641">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1874" height="258" key="GridCell.Tab.0.center/0.25.1920.1055@0.25.1920.1055" timestamp="1594169768660" />
-    <state width="1874" height="258" key="GridCell.Tab.0.left" timestamp="1594169768660">
+    <state width="1874" height="258" key="GridCell.Tab.0.center/0.25.1920.1055@0.25.1920.1055" timestamp="1594339690641" />
+    <state width="1874" height="258" key="GridCell.Tab.0.left" timestamp="1594339690641">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1874" height="258" key="GridCell.Tab.0.left/0.25.1920.1055@0.25.1920.1055" timestamp="1594169768660" />
-    <state width="1874" height="258" key="GridCell.Tab.0.right" timestamp="1594169768661">
+    <state width="1874" height="258" key="GridCell.Tab.0.left/0.25.1920.1055@0.25.1920.1055" timestamp="1594339690641" />
+    <state width="1874" height="258" key="GridCell.Tab.0.right" timestamp="1594339690642">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1874" height="258" key="GridCell.Tab.0.right/0.25.1920.1055@0.25.1920.1055" timestamp="1594169768661" />
-    <state width="1874" height="258" key="GridCell.Tab.1.bottom" timestamp="1594169768606">
+    <state width="1874" height="258" key="GridCell.Tab.0.right/0.25.1920.1055@0.25.1920.1055" timestamp="1594339690642" />
+    <state width="1874" height="258" key="GridCell.Tab.1.bottom" timestamp="1594339696908">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1874" height="258" key="GridCell.Tab.1.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1594169768606" />
-    <state width="1874" height="258" key="GridCell.Tab.1.center" timestamp="1594169768605">
+    <state width="1874" height="258" key="GridCell.Tab.1.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1594339696908" />
+    <state width="1874" height="258" key="GridCell.Tab.1.center" timestamp="1594339696907">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1874" height="258" key="GridCell.Tab.1.center/0.25.1920.1055@0.25.1920.1055" timestamp="1594169768605" />
-    <state width="1874" height="258" key="GridCell.Tab.1.left" timestamp="1594169768605">
+    <state width="1874" height="258" key="GridCell.Tab.1.center/0.25.1920.1055@0.25.1920.1055" timestamp="1594339696907" />
+    <state width="1874" height="258" key="GridCell.Tab.1.left" timestamp="1594339696907">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1874" height="258" key="GridCell.Tab.1.left/0.25.1920.1055@0.25.1920.1055" timestamp="1594169768605" />
-    <state width="1874" height="258" key="GridCell.Tab.1.right" timestamp="1594169768606">
+    <state width="1874" height="258" key="GridCell.Tab.1.left/0.25.1920.1055@0.25.1920.1055" timestamp="1594339696907" />
+    <state width="1874" height="258" key="GridCell.Tab.1.right" timestamp="1594339696908">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1874" height="258" key="GridCell.Tab.1.right/0.25.1920.1055@0.25.1920.1055" timestamp="1594169768606" />
+    <state width="1874" height="258" key="GridCell.Tab.1.right/0.25.1920.1055@0.25.1920.1055" timestamp="1594339696908" />
     <state x="654" y="159" width="611" height="786" key="find.popup" timestamp="1594167987856">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
@@ -197,43 +190,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/internal/pkg/database/store/posters.go</url>
-          <line>62</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/internal/pkg/database/store/posters.go</url>
-          <line>69</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/internal/pkg/server/handler/posters.go</url>
-          <line>93</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/internal/pkg/server/handler/posters.go</url>
-          <line>123</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/internal/pkg/server/handler/posters.go</url>
-          <line>139</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/internal/pkg/server/handler/posters.go</url>
-          <line>155</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/internal/pkg/server/handler/posters.go</url>
-          <line>187</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/internal/pkg/server/handler/posters.go</url>
-          <line>32</line>
-          <option name="timeStamp" value="18" />
+          <line>29</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

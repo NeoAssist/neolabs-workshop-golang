@@ -134,58 +134,10 @@ func (h *Handler) GetPosterById(context echo.Context) error {
 	return context.JSON(http.StatusOK, newPosterResponse(result))
 }
 
-func (h *Handler) GetPosterByName(context echo.Context) error {
-	posterName := context.QueryParam("query")
-
-	result, err := h.posterStore.GetByName(posterName)
-
-	if err != nil {
-		return context.JSON(http.StatusInternalServerError, errors.NewError(err))
-	}
-
-	if result == nil {
-		return context.JSON(http.StatusNotFound, errors.NotFound())
-	}
-
-	return context.JSON(http.StatusOK, newPosterResponse(result))
-}
-
 func (h *Handler) GetPosterByTitle(context echo.Context) error {
 	posterTitle := context.QueryParam("query")
 
 	result, err := h.posterStore.GetByTitle(posterTitle)
-
-	if err != nil {
-		return context.JSON(http.StatusInternalServerError, errors.NewError(err))
-	}
-
-	if result == nil {
-		return context.JSON(http.StatusNotFound, errors.NotFound())
-	}
-
-	return context.JSON(http.StatusOK, newPosterResponse(result))
-}
-
-func (h *Handler) GetPosterByDescription(context echo.Context) error {
-	posterDescription := context.QueryParam("query")
-
-	result, err := h.posterStore.GetByDescription(posterDescription)
-
-	if err != nil {
-		return context.JSON(http.StatusInternalServerError, errors.NewError(err))
-	}
-
-	if result == nil {
-		return context.JSON(http.StatusNotFound, errors.NotFound())
-	}
-
-	return context.JSON(http.StatusOK, newPosterResponse(result))
-}
-
-func (h *Handler) GetPosterByEmail(context echo.Context) error {
-	posterEmail := context.QueryParam("query")
-
-	result, err := h.posterStore.GetByEmail(posterEmail)
 
 	if err != nil {
 		return context.JSON(http.StatusInternalServerError, errors.NewError(err))
