@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d1a399f-c3f6-4d9f-9031-a45399356b2d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/pkg/database/interface/posters.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/database/interface/posters.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/pkg/database/store/posters.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/database/store/posters.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/pkg/server/handler/posters.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/server/handler/posters.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/pkg/database/model/posters.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/database/model/posters.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,25 +178,25 @@
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state x="743" y="310" width="424" height="484" key="FileChooserDialogImpl/0.25.1920.1055@0.25.1920.1055" timestamp="1593467996215" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1594428118895">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1594428193685">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594428118895" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594428193685" />
     <state width="1874" height="258" key="GridCell.Tab.0.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1594339690642" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1594428118894">
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1594428193684">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594428118894" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594428193684" />
     <state width="1874" height="258" key="GridCell.Tab.0.center/0.25.1920.1055@0.25.1920.1055" timestamp="1594339690641" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1594428118894">
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1594428193684">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594428118894" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594428193684" />
     <state width="1874" height="258" key="GridCell.Tab.0.left/0.25.1920.1055@0.25.1920.1055" timestamp="1594339690641" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1594428118895">
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1594428193684">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594428118895" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594428193684" />
     <state width="1874" height="258" key="GridCell.Tab.0.right/0.25.1920.1055@0.25.1920.1055" timestamp="1594339690642" />
     <state width="1874" height="258" key="GridCell.Tab.1.bottom" timestamp="1594339696908">
       <screen x="0" y="25" width="1920" height="1055" />
