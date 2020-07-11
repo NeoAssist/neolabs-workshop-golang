@@ -9,7 +9,7 @@ import (
 type PosterStore interface {
 	GetAll(offset int, limit int) ([]model.Poster, int, error)
 	GetByID(uuid.UUID) (*model.Poster, error)
-	GetByTitle(string) (*model.Poster, error)
+	GetByTitle(string) ([]model.Poster, int, error)
 	Create(*model.Poster) error
 	Update(*model.Poster) error
 }

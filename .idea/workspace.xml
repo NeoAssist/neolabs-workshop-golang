@@ -20,12 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d1a399f-c3f6-4d9f-9031-a45399356b2d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/pkg/database/interface/posters.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/database/interface/posters.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/pkg/database/store/posters.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/database/store/posters.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/pkg/server/handler/posters.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/server/handler/posters.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/pkg/server/handler/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/server/handler/response.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/pkg/server/handler/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/server/handler/routes.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +38,9 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/usr/local/go" />
+  <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GoLibraries">
-    <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1e0ljxC7Udk9dqfEUIYMsAbrTNT" />
   <component name="ProjectViewState">
@@ -56,6 +52,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
@@ -72,11 +71,11 @@
       <recent name="$PROJECT_DIR$/neolabs-workshop-golang/router/handler" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nicht\Workspace\neolabs-workshop-golang\static" />
+      <recent name="C:\Users\nicht\Workspace\neolabs-workshop-golang" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/cmd/neolabs-workshop-golang" />
       <recent name="$PROJECT_DIR$/internal/pkg/server/handler" />
-      <recent name="$PROJECT_DIR$/internal/pkg/database/store" />
-      <recent name="$PROJECT_DIR$/internal/pkg/database/interface" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.go build github.com/NeoAssist/neolabs-workshop-golang/cmd/neolabs-workshop-golang">
@@ -87,6 +86,28 @@
       <filePath value="$PROJECT_DIR$/cmd/neolabs-workshop-golang/neolabs-workshop-api.go" />
       <package value="github.com/NeoAssist/neolabs-workshop-golang/cmd/neolabs-workshop-golang" />
       <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build neolabs-workshop-api.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="neolabs-workshop-golang" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/cmd/neolabs-workshop-golang/neolabs-workshop-api.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="run" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="docker-compose.yml.postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -105,6 +126,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build github.com/NeoAssist/neolabs-workshop-golang/cmd/neolabs-workshop-golang" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Makefile.run" />
+        <item itemvalue="Go Build.go build neolabs-workshop-api.go" />
         <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -128,14 +152,27 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
+    <state x="752" y="183" key="#GOPATH" timestamp="1594423202382">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="752" y="183" key="#GOPATH/0.0.1920.1050@0.0.1920.1050" timestamp="1594423202382" />
+    <state x="752" y="455" key="#GOROOT" timestamp="1594423191463">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="752" y="455" key="#GOROOT/0.0.1920.1050@0.0.1920.1050" timestamp="1594423191463" />
     <state x="755" y="389" width="400" height="327" key="#Go_Modules" timestamp="1593467298510">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state x="755" y="389" width="400" height="327" key="#Go_Modules/0.25.1920.1055@0.25.1920.1055" timestamp="1593467298510" />
-    <state x="650" y="349" width="610" height="407" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594166150633">
-      <screen x="0" y="25" width="1920" height="1055" />
+    <state x="650" y="322" width="610" height="407" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594423306428">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="650" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594423306428" />
     <state x="650" y="349" width="610" height="407" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1920.1055@0.25.1920.1055" timestamp="1594166150633" />
+    <state x="669" y="235" key="#docker-compose.yml:_Compose_Deployment" timestamp="1594425202302">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="669" y="235" key="#docker-compose.yml:_Compose_Deployment/0.0.1920.1050@0.0.1920.1050" timestamp="1594425202302" />
     <state width="938" height="646" key="DebuggerActiveHint" timestamp="1594339754519">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
@@ -144,21 +181,25 @@
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state x="743" y="310" width="424" height="484" key="FileChooserDialogImpl/0.25.1920.1055@0.25.1920.1055" timestamp="1593467996215" />
-    <state width="1874" height="258" key="GridCell.Tab.0.bottom" timestamp="1594339690642">
-      <screen x="0" y="25" width="1920" height="1055" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1594428118895">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594428118895" />
     <state width="1874" height="258" key="GridCell.Tab.0.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1594339690642" />
-    <state width="1874" height="258" key="GridCell.Tab.0.center" timestamp="1594339690641">
-      <screen x="0" y="25" width="1920" height="1055" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1594428118894">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594428118894" />
     <state width="1874" height="258" key="GridCell.Tab.0.center/0.25.1920.1055@0.25.1920.1055" timestamp="1594339690641" />
-    <state width="1874" height="258" key="GridCell.Tab.0.left" timestamp="1594339690641">
-      <screen x="0" y="25" width="1920" height="1055" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1594428118894">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594428118894" />
     <state width="1874" height="258" key="GridCell.Tab.0.left/0.25.1920.1055@0.25.1920.1055" timestamp="1594339690641" />
-    <state width="1874" height="258" key="GridCell.Tab.0.right" timestamp="1594339690642">
-      <screen x="0" y="25" width="1920" height="1055" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1594428118895">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594428118895" />
     <state width="1874" height="258" key="GridCell.Tab.0.right/0.25.1920.1055@0.25.1920.1055" timestamp="1594339690642" />
     <state width="1874" height="258" key="GridCell.Tab.1.bottom" timestamp="1594339696908">
       <screen x="0" y="25" width="1920" height="1055" />
@@ -180,20 +221,10 @@
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state x="654" y="159" width="611" height="786" key="find.popup/0.25.1920.1055@0.25.1920.1055" timestamp="1594167987856" />
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1594169137768">
-      <screen x="0" y="25" width="1920" height="1055" />
+    <state x="623" y="231" width="672" height="675" key="search.everywhere.popup" timestamp="1594427581177">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="623" y="231" width="672" height="675" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594427581177" />
     <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.25.1920.1055@0.25.1920.1055" timestamp="1594169137768" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/internal/pkg/database/store/posters.go</url>
-          <line>29</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

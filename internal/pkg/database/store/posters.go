@@ -45,16 +45,16 @@ func (ps *PosterStore) GetByID(id uuid.UUID) (*model.Poster, error) {
 }
 
 // GetByTitle .
-func (ps *PosterStore) GetByTitle(title string) (*model.Poster, error) {
-	var m model.Poster
-	if err := ps.db.Where("title LIKE ?", "%"+title+"%").Find(&m).Error; err != nil {
-		if gorm.IsRecordNotFoundError(err) {
-			return nil, nil
-		}
-		return nil, err
-	}
+func (ps *PosterStore) GetByTitle(title string) ([]model.Poster, int, error) {
+	var (
+		posters []model.Poster
+		count   int
+	)
 
-	return &m, nil
+	ps.db.Model(&posters)
+	ps.db.Where("title LIKE ?", "%"+title+"%").Find(&posters).Count(&count)
+
+	return posters, count, nil
 }
 
 // Create .
