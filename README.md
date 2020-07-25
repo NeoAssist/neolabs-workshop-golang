@@ -12,6 +12,7 @@ Assim que tivermos um container do postgres rodando com o nosso banco de dados, 
 
 ```bash
 $ cp .env.example .env
+$ go mod download
 $ go run cmd/neolabs-workshop-golang/neolabs-workshop-api.go
 ```
 
