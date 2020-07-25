@@ -1,7 +1,7 @@
 version: "3.7"
 
 networks:
-  neoacademy:
+  neolabs:
     ipam:
       driver: default
       config:
@@ -20,7 +20,7 @@ services:
       TZ: "UTC"
       PGTZ: "UTC"
     networks:
-      neoacademy:
+      neolabs:
         ipv4_address: 10.10.10.22
 
   pgadmin:
@@ -31,5 +31,5 @@ services:
       PGADMIN_DEFAULT_PASSWORD: neolabs
       PGADMIN_CONFIG_CONSOLE_LOG_LEVEL: 10
     networks:
-      neoacademy:
+      neolabs:
         ipv4_address: 10.10.10.23
